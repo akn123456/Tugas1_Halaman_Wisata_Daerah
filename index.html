@@ -3,62 +3,169 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Wisata Daerah - Beranda</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Wisata Yogyakarta - Beranda</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <ul class="nav-menu">
-        <li><a href="index.html" class="active">Beranda</a></li>
-        <li><a href="wisata_alam.html">Wisata Alam</a></li>
-        <li><a href="wisata_kuliner.html">Wisata Kuliner</a></li>
-        <li><a href="wisata_budaya.html">Wisata Seni dan Budaya</a></li>
-        <li><a href="about.html">Tentang Kami</a></li>
-      </ul>
-    </nav>
-  </header>
+<!--Header Navigasi-->
+<header>
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="index.html" class="active">Beranda</a></li>
+      <li class="dropdown">
+        <a href="#"> Wisata ▾</a>
+        <ul class="submenu">
+          <li><a href="wisata_alam.html">Wisata Alam</a></li>
+          <li><a href="wisata_kuliner.html">Wisata Kuliner</a></li>
+          <li><a href="wisata_budaya.html">Wisata Budaya</a></li>
+        </ul>
+      </li>
+      <li><a href="event.html">Event</a></li>
+      <li class="dropdown">
+        <a href="#">Bantuan ▾</a>
+        <ul class="submenu">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">Tentang Kami</a></li>
+    </ul>
+  </nav>
+</header>
 
-<main>
-  <section class="hero">
-    <h1>Selamat Datang di Wisata Daerah Yogyakarta</h1>
-    <p>Temukan keindahan alam, kuliner khas, dan budaya unik dari daerah Yogyakarta.</p>
-    <img src="assets/images/prambanan.jpg" alt="Pemandangan Wisata Alam" />
-  </section>
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <h1>Wisata Daerah Yogyakarta</h1>
+      <p>Eksplorasi keindahan alam, kuliner lezat, dan budaya yang kaya dari jantung Jawa.</p>
+      <div class="search-box">
+        <input type="text" placeholder="Cari destinasi wisata...">
+        <button>Cari</button>
+      </div>
+    </section>
 
-  <section class="info-list">
-    <h2>Jenis Wisata</h2>
-    <div class="cards-container">
-      <a href="wisata_alam.html" class="card-link">
-        <div class="card-icon">🌿</div>
-        <h3>Wisata Alam</h3>
-        <p>Jelajahi keindahan alam pegunungan, pantai, dan hutan yang menakjubkan.</p>
-      </a>
-      <a href="wisata_kuliner.html" class="card-link">
-        <div class="card-icon">🍽️</div>
-        <h3>Wisata Kuliner</h3>
-        <p>Nikmati cita rasa kuliner khas daerah yang menggugah selera.</p>
-      </a>
-      <a href="wisata_budaya.html" class="card-link">
-        <div class="card-icon">🎭</div>
-        <h3>Wisata Budaya</h3>
-        <p>Temukan ragam budaya, tradisi, dan kesenian lokal yang unik.</p>
-      </a>
+    <!-- Section Jenis Wisata -->
+    <section class="info-list" id="eksplor">
+      <h2>Jenis Wisata</h2>
+
+      <div class="cards-grid">
+        <!-- Card Wisata Alam -->
+        <div class="card">
+          <img src="assets/images/air terjun sri gethuk.jpeg" alt="Gunung Merapi" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">🏞️ Wisata Alam</h3>
+            <p class="card-description">Eksplorasi Gunung Merapi, Goa Pindul, Hutan Pinus Mangunan, dan Pantai Parangtritis.</p>
+          </div>
+        </div>
+
+        <!-- Card Wisata Kuliner -->
+        <div class="card">
+          <img src="assets/images/gudeg.jpeg" alt="Gudeg Jogja" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">🍜 Wisata Kuliner</h3>
+            <p class="card-description">Cicipi kuliner khas seperti Gudeg, Bakpia Pathok, Sate Klathak, dan Oseng Mercon.</p>
+          </div>
+        </div>
+
+        <!-- Card Wisata Budaya -->
+        <div class="card">
+          <img src="assets/images/keraton.jpg" alt="Keraton Yogyakarta" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">🎨 Wisata Budaya</h3>
+            <p class="card-description">Kunjungi Keraton Yogyakarta, Museum Ullen Sentalu, dan pertunjukan wayang kulit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Destinasi Populer -->
+    <section class="info-list">
+      <h2>Destinasi Populer</h2>
+      <div class="cards-grid">
+        <div class="card">
+          <img src="assets/images/pantai parangtritis.jpg" alt="Pantai Parangtritis" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">Pantai Parangtritis</h3>
+            <p class="card-description">Pantai legendaris Yogyakarta yang memesona dengan pasir hitam dan sunset yang indah.</p>
+          </div>
+        </div>
+        <div class="card">
+          <img src="assets/images/taman sari.jpg" alt="Taman Sari" class="card-img" />
+          <div class="card-content">
+            <h3 class="card-title">Taman Sari</h3>
+            <p class="card-description">Kompleks bekas taman kerajaan yang eksotis dan sarat sejarah.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Event -->
+     <section class="info-list">
+  <h2>Event Mendatang</h2>
+  <div class="cards-grid">
+    <div class="card">
+      <div class="card-content">
+        <h3 class="card-title">Festival Sekaten</h3>
+        <p class="card-description">November 2025 – Alun-Alun Utara</p>
+      </div>
     </div>
-  </section>
-  
-    
+    <div class="card">
+      <div class="card-content">
+        <h3 class="card-title">Wayang Jogja Night</h3>
+        <p class="card-description">Desember 2025 – Benteng Vredeburg</p>
+      </div>
+    </div>
+  </div>
+  <a href="event.html" class="btn-secondary">Lihat Semua Event</a>
+</section>
+
+    <!-- Section Tentang Singkat -->
+     <section class="info-list">
+  <h2>Tentang Yogyakarta</h2>
+  <div class="card" style="max-width: 800px; margin: 0 auto; text-align: left;">
+    <div class="card-content">
+      <h3 class="card-title">Yogyakarta: Kota Budaya dan Wisata</h3>
+      <p class="card-description">
+        Yogyakarta, atau Jogja, merupakan salah satu destinasi wisata paling populer di Indonesia.
+        Dikenal dengan kekayaan budaya, sejarah, dan keindahan alamnya, Jogja menawarkan pengalaman yang lengkap bagi wisatawan.
+        Mulai dari Keraton yang megah, kuliner legendaris seperti gudeg, hingga panorama alam seperti Pantai Parangtritis dan Merapi.
+      </p>
+      <p class="card-description">
+        Masyarakat Jogja terkenal ramah dan menjunjung tinggi nilai tradisi. Tidak heran jika kota ini menjadi tempat favorit untuk belajar, berlibur, hingga berkreasi.
+      </p>
+      <a href="profil_daerah.html" class="btn-secondary" style="margin-top: 1rem; display: inline-block;">Lihat Profil Daerah</a>
+    </div>
+  </div>
+</section>
+    <!-- Section Peta Lokasi -->
+    <section class="info-list">
+      <h2>Peta Lokasi</h2>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63760229.038497165!2d95.0031826!3d-2.6761947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd3f9c50c52a78f%3A0x9efb65a8163998f4!2sIndonesia!5e0!3m2!1sid!2sid!4v1652777764745!5m2!1sid!2sid" 
+        width="100%" 
+        height="450" 
+        style="border:0;" 
+        allowfullscreen 
+        loading="lazy">
+      </iframe>
+      <a href="peta.html" class="btn-secondary">Lihat Peta Lengkap</a>
+    </section>
   </main>
 
-<footer>
-  <div class="footer-container">
-    <p>© 2025 Wisata Daerah. All rights reserved.</p>
-    <address class="footer-contact">
-      <a href="mailto:info@wisatadaerah.com" aria-label="Email Wisata Daerah">info@exploredaerah.com</a> | 
-      <a href="tel:+6281234567890" aria-label="Telepon Wisata Daerah">+62 274-1234-567</a> | 
-          Jl. Panorama Indah No. 123, Desa Wisata Sejahtera, Indonesia
-    </address>
-  </div>
-</footer>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <p>© 2025 Wisata Daerah. All rights reserved.</p>
+      <address class="footer-contact">
+        <a href="mailto:info@exploredaerah.com">info@exploredaerah.com</a> |
+        <a href="tel:+622741234567">+62 274-1234-567</a> |
+        Jl. Panorama Indah No. 123, Yogyakarta
+      </address>
+      <div class="social-icons">
+        <a href="#">FB</a> | <a href="#">IG</a> | <a href="#">TW</a>
+      </div>
+    </div>
+  </footer>
+<script src="assets/js/script.js"></script>
 </body>
 </html>

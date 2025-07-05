@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservasi Wisata</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="index.html" class="active">Beranda</a></li>
+        <li class="dropdown">
+          <a href="#">Wisata ▾</a>
+          <ul class="submenu">
+            <li><a href="wisata_alam.html">Wisata Alam</a></li>
+            <li><a href="wisata_kuliner.html">Wisata Kuliner</a></li>
+            <li><a href="wisata_budaya.html">Wisata Budaya</a></li>
+          </ul>
+        </li>
+        <li><a href="event.html">Event</a></li>
+        <li class="dropdown">
+          <a href="#">Bantuan ▾</a>
+          <ul class="submenu">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">Tentang Kami</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Reservation</h1>
+    <div class="grid-container" id="package-grid">
+      <div class="card" data-package="Paket Hutan Pinus Mangunan" data-price="350000">
+        <img src="assets/images/Hutan-Pinus-Mangunan.jpg" alt="Paket Hutan Pinus Mangunan">
+        <div class="card-content">
+          <h3>Paket Hutan Pinus Mangunan</h3>
+          <p>Liburan 2 hari 1 malam.</p>
+          <p>Harga: Rp 350.000 / orang</p>
+          <button class="book-btn">Book Now</button>
+        </div>
+      </div>
+      <div class="card" data-package="Paket Bukit Pengilon" data-price="420000">
+        <img src="assets/images/bukit pengilon.jpg" alt="Paket Bukit Pengilon">
+        <div class="card-content">
+          <h3>Paket Bukit Pengilon</h3>
+          <p>Liburan santai 2 hari 1 malam.</p>
+          <p>Harga: Rp 420.000 / orang</p>
+          <button class="book-btn">Book Now</button>
+        </div>
+      </div>
+      <div class="card" data-package="Paket Gumuk Pasir Parangkusumo" data-price="420000">
+        <img src="assets/images/gumuk-pasir-parangkusumo.jpg" alt="Paket Gumuk Pasir Parangkusumo">
+        <div class="card-content">
+          <h3>Paket Gumuk Pasir Parangkusumo</h3>
+          <p>Pengalaman 1 hari 1 malam.</p>
+          <p>Harga: Rp 400.000 / orang</p>
+          <button class="book-btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="reservation-form" class="hidden">
+      <h2>Reservation Details</h2>
+      <form id="form-reservation">
+        <label>Nama:</label>
+        <input type="text" id="name" required />
+
+        <label>Telepon:</label>
+        <input type="tel" id="phone" required />
+
+        <label>Email:</label>
+        <input type="email" id="email" required />
+
+        <label>Jumlah Orang:</label>
+        <input type="number" id="people" min="1" required />
+
+        <label>Tanggal Booking:</label>
+        <input type="date" id="start-date" required />
+
+        <button type="button" class="btn" id="next-btn">Next</button>
+      </form>
+    </div>
+
+    <div id="summary-section" class="hidden">
+      <h2>Reservation Summary</h2>
+      <table>
+        <tr><th>Nama</th><td id="sum-name"></td></tr>
+        <tr><th>Telepon</th><td id="sum-phone"></td></tr>
+        <tr><th>Email</th><td id="sum-email"></td></tr>
+        <tr><th>Paket</th><td id="sum-package"></td></tr>
+        <tr><th>Jumlah Orang</th><td id="sum-people"></td></tr>
+        <tr><th>Tanggal Booking</th><td id="sum-dates"></td></tr>
+      </table>
+      <div class="total">Total: <span id="total-price">Rp 0</span></div>
+      <label>Metode Pembayaran</label>
+      <select id="payment-method">
+        <option value="credit-card">Credit Card</option>
+        <option value="bank-transfer">Bank Transfer</option>
+      </select>
+      <button class="btn" id="save-btn">Simpan</button>
+    </div>
+  </main>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
